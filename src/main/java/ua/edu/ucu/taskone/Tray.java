@@ -1,13 +1,21 @@
 package ua.edu.ucu.taskone;
 public class Tray {
-    public int denomination;
+    private int denomination;
     private Tray next;
 
     public Tray(int denomination) {
         this.denomination = denomination;
     }
 
-    public Tray  setNext(Tray next) {
+    public int getDenomination() {
+        return denomination;
+    }
+
+    public void setDenomination(int denomination) {
+        this.denomination = denomination;
+    }
+
+    public Tray setNext(Tray next) {
         this.next = next;
         return next;
     }

@@ -6,8 +6,16 @@ import java.util.List;
 import java.util.UUID;
 
 public class Group<T> extends Task<T> {
-    public String groupUuid;
+    private String groupUuid;
     private List<Task<T>> tasks;
+
+    public String getGroupUuid() {
+        return groupUuid;
+    }
+
+    public void setGroupUuid(String groupUuid) {
+        this.groupUuid = groupUuid;
+    }
 
     public Group<T> addTask(Task<T> task) {
         if (tasks == null) {

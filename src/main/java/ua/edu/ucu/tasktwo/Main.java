@@ -2,6 +2,8 @@ package ua.edu.ucu.tasktwo;
 
 
 public class Main {
+    private static final int ID = 10;
+
     public static void main(String[] args) {
         Group<Integer> nestedGroup = new Group<>();
         nestedGroup
@@ -14,6 +16,6 @@ public class Main {
         .addTask(nestedGroup)
         .addTask(new Signature<>(
             x -> System.out.println(x * x * x)));
-        group.apply(10);
+        group.apply(ID);
     }
 }

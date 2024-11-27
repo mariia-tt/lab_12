@@ -1,6 +1,5 @@
 package ua.edu.ucu.tasktwo;
 
-import java.util.UUID;
 import java.util.function.Consumer;
 
 public class Signature<T> extends Task<T> {
