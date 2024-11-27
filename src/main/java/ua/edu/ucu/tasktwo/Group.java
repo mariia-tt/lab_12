@@ -13,8 +13,8 @@ public class Group<T> extends Task<T> {
         return groupUuid;
     }
 
-    public void setGroupUuid(String groupUuid) {
-        this.groupUuid = groupUuid;
+    public void setGroupUuid(String newGroupUuid) {
+        this.groupUuid = newGroupUuid;
     }
 
     public Group<T> addTask(Task<T> task) {

@@ -11,12 +11,12 @@ public class Tray {
         return denomination;
     }
 
-    public void setDenomination(int denomination) {
-        this.denomination = denomination;
+    public void setDenomination(int newDenomination) {
+        this.denomination = newDenomination;
     }
 
-    public Tray setNext(Tray next) {
-        this.next = next;
+    public Tray setNext(Tray newNext) {
+        this.next = newNext;
         return next;
     }
 

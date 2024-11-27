@@ -3,9 +3,9 @@ package ua.edu.ucu.tasktwo;
 import java.util.function.Consumer;
 
 public class Signature<T> extends Task<T> {
-    public Consumer<T> consumer;
-    public Signature(Consumer<T> consumer) {
-        this.consumer = consumer;
+    private Consumer<T> consumer;
+    public Signature(Consumer<T> newConsumer) {
+        this.consumer = newConsumer;
     }
 
     public void apply(T arg) {

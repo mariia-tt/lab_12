@@ -13,8 +13,8 @@ public class ATM {
     public Tray getFirstTray() {
         return firstTray;
     }
-    public void setFirstTray(Tray firstTray) {
-        this.firstTray = firstTray;
+    public void setFirstTray(Tray newFirstTray) {
+        this.firstTray = newFirstTray;
     }
 
     public void process(int amount) {
